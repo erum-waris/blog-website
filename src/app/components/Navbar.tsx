@@ -8,17 +8,17 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-blue-200 via-gray-400 to-[#91AC85] shadow-lg py-1">
+    <nav className=" bg-gradient-to-r from-blue-200 via-purple-500 to-pink-600 shadow-lg py-1">
       <div className="mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex items-center justify-between h-16 md:h-28">
+        <div className="flex items-center justify-between h-16 md:h-24">
           {/* Logo Section */}
           <div>
             <Image
-              src="/images/parenting-logo.png"
+              src="/images/parentinglogo.png"
               alt="parents logo"
               width={100}
               height={100}
-              className="w-[70px] h-[70px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px]"
+              className="w-[70px] h-[60px] md:w-[120px] md:h-[120px] "
               priority={true}
             />
           </div>

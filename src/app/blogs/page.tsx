@@ -13,7 +13,7 @@ export default async function Home() {
   }`;
 
   const blogs: Blog[] = await client.fetch(query);
-  console.log(blogs);
+  // console.log(blogs);
 
   return (
     <section className="flex flex-col ">

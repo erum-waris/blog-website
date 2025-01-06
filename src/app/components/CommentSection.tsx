@@ -18,7 +18,7 @@ const CommentSection = () => {
     <div className="mt-8 mx-10">
       <Heading4 text="Share Your Thoughts:"   />
       <textarea
-        className="w-full p-2 border border-gray-300 rounded "
+        className="w-full p-2 border border-gray-300 rounded text-black "
         rows={4}
         placeholder="Write a comment..."
         value={newComment}

@@ -4,6 +4,7 @@ import { Blog } from "../../../../types/Types";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import CommentSection from "@/app/components/CommentSection";
+import Heading3 from "@/app/components/Heading3";
 
 export default async function Blogs({
   params: { slug },
@@ -38,7 +39,7 @@ export default async function Blogs({
             height={400}
             className="mx-auto md:w-[600px] md:h-[600px] w-full h-full object-cover rounded-lg"
           />
-          <Heading2 text={`${blog.title}`} />
+          <Heading3 text={`${blog.title}`} />
           <p className="grid grid-cols-1 text-white mt-2 text-center text-base sm:text-md md:text-lg lg:text-xl bg-black/40 rounded-lg p-5 capitalize">
             {blog.description}
           </p>

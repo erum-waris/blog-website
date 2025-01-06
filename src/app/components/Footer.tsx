@@ -11,11 +11,11 @@ const Footer = () => {
                 <div>
                     <div className="flex items-center space-x-4 mb-4">
                         <Image
-                            src="/images/parenting-logo.png" // Replace this with your actual logo path
+                            src="/images/parentinglogo.png" 
                             alt="Parenting World Logo"
-                            width={100} // Set the width of your logo
-                            height={100} // Set the height of your logo
-                            className="rounded-sm"
+                            width={100}
+                            height={100} 
+                            className="w-[70px] h-[70px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px]"
                         />
                         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold hover:text-[#ece6e8] hover:border-b hover:border-white hover:py-1">
                             Parenting World
@@ -27,7 +27,7 @@ const Footer = () => {
                 </div>
 
                 {/* Quick Links */}
-                <div>
+                <div className='md:ml-20'>
                     <span className="text-md md:text-lg lg:text-xl font-semibold mb-4 hover:text-[#ece6e8] hover:border-b hover:border-white hover:py-1 ">Quick Links</span>
                     <ul className="space-y-2 my-5">
                         <li>

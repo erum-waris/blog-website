@@ -4,7 +4,7 @@ import Heading3 from "./Heading3";
 
 const AboutSection = () => (
   <section>
-    <div className="mx-auto max-w-7xl text-center py-8 px-8 bg-black/20 rounded-lg grid grid-cols-1 place-items-center ">
+    <div className="mx-auto max-w-7xl text-center py-8 px-8 grid grid-cols-1 place-items-center ">
       <Heading2 text="About Us" />
       <div>
         <Heading2 text="Introduction" />
