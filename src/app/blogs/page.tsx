@@ -1,6 +1,3 @@
-
-
-
 import { Blog } from "../../../types/Types";
 import { client } from "../../sanity/lib/client";
 import BlogCardsection from "../components/BlogCardsection";
@@ -15,22 +12,18 @@ export default async function Home() {
   
   }`;
 
-  const blogs:Blog[] = await client.fetch(query)
-  console.log(blogs)
+  const blogs: Blog[] = await client.fetch(query);
+  console.log(blogs);
 
   return (
-    <main className="flex flex-col ">
-    <Heading2 text = "Blogs" />
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        {
-          blogs.map((blog:Blog)=>(
-            <BlogCardsection blog={blog} key={blog.slug} />
-          ))
-        }
- 
-      </section>
+    <section className="flex flex-col ">
+      <Heading2 text="Blogs" />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        {blogs.map((blog: Blog) => (
+          <BlogCardsection blog={blog} key={blog.slug} />
+        ))}
+      </div>
       <CommentSection />
-    </main>
-      
-  )
+    </section>
+  );
 }

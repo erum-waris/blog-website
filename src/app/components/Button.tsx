@@ -2,12 +2,9 @@
 
 import Link from 'next/link';
 import React from 'react';
+import { ButtonProps } from '../../../types/Types';
 
-interface ButtonProps {
-  label: string;
-  href:string;
-  
-}
+
 
 const Button: React.FC<ButtonProps> = ({ label,href }) => {
   return (

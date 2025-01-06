@@ -4,3 +4,8 @@ export interface Blog {
     image: any;
     slug: string;
   }
+  export interface ButtonProps {
+    label: string;
+    href:string;
+    
+  }
